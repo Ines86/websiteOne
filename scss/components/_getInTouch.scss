@@ -1,0 +1,39 @@
+/** Get in Touch Section **/
+#get-in-touch {
+    max-height: 384px;
+    background: url(../img/contact-bg.jpg) no-repeat;
+    padding: 80px 0 90px 0;
+    text-align: center;
+  
+    h2 {
+      @include kaushanHeader(5rem, $white);
+      margin-bottom: 70px;
+    }
+  
+    ul {
+      display: flex;
+      justify-content: center;
+  
+      li {
+        padding-left: 38px;
+      }
+  
+      .fa {
+        font-size: 3.6rem;
+        border-radius: 50%;
+        border: 2px solid $white;
+        color: $white;
+        line-height: 2em;
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        display: inline-block;
+        transition: 0.1s;
+  
+        &:hover {
+          color: $grey;
+          border: 2px solid $grey;
+        }
+      }
+    }
+  }

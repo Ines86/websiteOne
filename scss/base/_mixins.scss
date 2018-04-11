@@ -1,0 +1,33 @@
+@mixin button($bg-color, $color) {
+    background: $bg-color;
+    color: $color;
+    display: inline-block;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  @mixin shadow() {
+    -webkit-box-shadow: 2px 7px 48px 6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 7px 48px 6px rgba(0,0,0,0.2);
+    box-shadow: 2px 7px 48px 6px rgba(0,0,0,0.2);
+  }
+
+  @mixin diagonal-gradient() {
+    background: #de813c;
+    background: -moz-linear-gradient(-45deg, #de813c 0%, #3f519a 100%, #3f519a 100%, #3f519a 101%);
+    background: -webkit-linear-gradient(-45deg, #de813c 0%,#3f519a 100%,#3f519a 100%,#3f519a 101%);
+    background: linear-gradient(135deg, #de813c 0%,#3f519a 100%,#3f519a 100%,#3f519a 101%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de813c', endColorstr='#3f519a',GradientType=1 ); 
+  }
+
+  @mixin kaushanHeader($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+    font-family: 'Kaushan Script', cursive; 
+  }

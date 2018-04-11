@@ -1,0 +1,40 @@
+/** Footer **/
+footer {
+    padding: 97px 0 36px 0;
+    background: $white;
+    font-size: 1.7rem;
+  
+    a,
+    a:active {
+      color: $grey;
+    }
+  
+    a:hover,
+    a:visited {
+      color: $grey;
+      text-decoration: underline;
+    }
+  
+    .copyright {
+      font-weight: bold;
+      margin-top: 82px;
+      text-align: center;
+    }
+  
+    h4 {
+      font-size: 1.7rem;
+    }
+  
+    ul {
+      display: flex;
+      justify-content: space-around;
+  
+      li {
+        display: flex;
+      }
+  
+      img {
+        padding-right: 26px;
+      }
+    }
+  }

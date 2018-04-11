@@ -1,0 +1,120 @@
+
+#offer {
+    .color-bg {
+      @include diagonal-gradient();
+      width: 30%;
+      padding: 95px 0 107px 0;
+    }
+  
+    .grey-bg {
+      background-color: $light-grey;
+      width: 70%;
+      display: flex;
+      padding: 95px 0 107px 0;
+    }
+  
+    .next-level {
+      color: $grey;
+      width: 50%;
+      padding-left: 40px;
+  
+      h2 {
+        font-family: "Kaushan Script", cursive;
+        font-size: 5rem;
+        margin: 50px 0 38px 0;
+        line-height: 1.2;
+      }
+  
+      p {
+        margin-bottom: 35px;
+        font-size: $m-size;
+      }
+    }
+  
+    .professional-design {
+      color: $grey;
+      float: right;
+      background: $white;
+      text-align: center;
+      width: 380px;
+      height: 588px;
+  
+      h2 {
+        @include kaushanHeader(5rem, $grey);
+        margin-top: 55px;
+      }
+  
+      h3 {
+        font-size: 6.9rem;
+        color: #3f519a;
+        margin: 50px 0;
+      }
+  
+      h4 {
+        font-size: 2.5rem;
+      }
+  
+      p {
+        font-size: $m-size;
+        padding: 10px 35px 0 35px;
+      }
+  
+      small {
+        font-size: 2.5rem;
+        display: block;
+        margin-bottom: 22px;
+        margin-top: 12px;
+        font-weight: bold;
+      }
+    }
+  
+    .our-best {
+      @include diagonal-gradient();
+      color: $white;
+      text-align: center;
+      width: 380px;
+      height: 588px;
+  
+      h2 {
+        @include kaushanHeader(6.2rem, $grey);
+        margin-top: 105px;
+      }
+  
+      small {
+        font-size: 2.5rem;
+        display: block;
+        margin-bottom: 22px;
+        margin-top: 12px;
+        font-weight: bold;
+      }
+  
+      ul {
+        text-align: left;
+        padding-left: 60px;
+  
+        li {
+          padding-bottom: 20px;
+          font-size: 1.6rem;
+  
+          &:before {
+            font-family: FontAwesome;
+            content: "\f00c";
+            display: inline-block;
+            padding-right: 14px;
+            vertical-align: middle;
+          }
+        }
+      }
+  
+      .btn {
+        @include button($white, #000);
+        margin-top: 50px;
+        transition: 0.5s;
+  
+        &:hover {
+          color: #3f519a;
+        }
+      }
+    }
+  }
+  

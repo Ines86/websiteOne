@@ -1,0 +1,49 @@
+/** Cards Section **/
+#cards {
+    margin-top: -155px;
+  
+    .row {
+      justify-content: center;
+    }
+    .card {
+      @include shadow();
+      position: relative;
+      border-radius: 20px;
+      background: $white;
+      color: $grey;
+      text-align: center;
+      max-width: 374px;
+  
+      img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+  
+      h2 {
+        font-size: 2.5rem;
+        margin: 25px 0 28px 0;
+      }
+  
+      p {
+        padding-bottom: 43px;
+        line-height: 1.5;
+      }
+  
+      .btn {
+        @include button(#465396, $white);
+        @include shadow();
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        transition: 0.5s;
+  
+        &:hover {
+          background: #dc803d;
+        }
+      }
+    }
+  }

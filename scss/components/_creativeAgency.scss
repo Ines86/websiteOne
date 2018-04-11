@@ -1,0 +1,52 @@
+/** Creative Agency Section **/
+#creative-agency {
+    background: url(../img/a-letter.png) no-repeat;
+    background-position: center top;
+    margin-top: 135px;
+    margin-bottom: 100px;
+    height: 566px;
+  
+    h2 {
+      @include kaushanHeader(5rem, $grey);
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+  
+    p {
+      color: #040404;
+      font-size: $m-size;
+      width: 60%;
+    }
+  
+    .bold {
+      display: block;
+    }
+  
+    .btn {
+      @include button(#465396, $white);
+      @include shadow();
+      margin-top: 44px;
+      margin-left: 8px;
+      transition: 0.5s;
+  
+      &:hover {
+        background: #dc803d;
+      }
+    }
+  
+    .quote {
+      font-weight: bold;
+      padding-left: 195px;
+      margin-top: 70px;
+    }
+  
+    .author {
+      font-weight: bold;
+      padding-left: 242px;
+      font-family: "Kaushan Script", cursive;
+      font-size: 4.7rem;
+      color: $grey;
+      margin-top: 20px;
+    }
+  }
+  

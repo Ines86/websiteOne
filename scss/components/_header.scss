@@ -1,0 +1,82 @@
+/** Header **/
+header {
+    background: url(../img/header-bg.jpg) no-repeat;
+    height: 822px;
+  
+    #top {
+      display: flex;
+      padding-top: 22px;
+  
+      .logo {
+        margin-left: 52px;
+      }
+    }
+  
+    /** Main Navigation **/
+    nav {
+      margin-left: auto;
+      margin-right: 64px;
+  
+      ul {
+        display: flex;
+  
+        li {
+          padding-left: 34px;
+  
+          a {
+            font-family: "Lato", sans-serif;
+            color: $white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.5s;
+  
+            &:hover {
+              color: $light-grey;
+              text-decoration: none;
+              border-top: 1px solid $white;
+              border-bottom: 1px solid $white;
+              padding: 3px 0 3px 0;
+            }
+          }
+        }
+      }
+    }
+  
+    /** Banner Overlay **/
+    .overlay {
+      text-align: center;
+      margin-top: 110px;
+  
+      h2 {
+        @include kaushanHeader(11rem, $white);
+        line-height: 1.5;
+        font-weight: normal;
+      }
+  
+      h4 {
+        font-size: 3.7rem;
+        color: $white;
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+  
+      p {
+        color: $white;
+        width: 60%;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+  
+      .btn {
+        @include button($white, #000);
+        margin: 40px 0 86px 0;
+        transition: 0.5s;
+  
+        &:hover {
+          color: #3f519a;
+        }
+      }
+    }
+  }

@@ -1,0 +1,125 @@
+/** Reviews Section **/
+#reviews {
+    > div {
+      display: flex;
+    }
+  
+    h2 {
+      @include kaushanHeader(6.5rem, $grey);
+      margin: 45px 0 5px 0;
+    }
+  
+    h4 {
+      font-size: 2.2rem;
+      margin-bottom: 29px;
+      color: #515151;
+    }
+  
+    h5 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      font-size: $m-size;
+      padding-right: 86px;
+    }
+  
+    .left-item {
+      background: $white;
+      width: 45%;
+      margin-left: 5%;
+  
+      ul {
+        padding-right: 52px;
+      }
+    }
+  
+    .right-item {
+      @include diagonal-gradient();
+      width: 55%;
+      color: $white;
+      margin-bottom: 128px;
+  
+      p {
+        width: 30%;
+        float: right;
+        margin-top: 62px;
+      }
+  
+      .fa {
+        font-size: 3rem;
+        border-radius: 50%;
+        border: 2px solid $white;
+        color: #272525;
+        line-height: 2em;
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        display: inline-block;
+        background-color: $white;
+        transition: 0.5s;
+  
+        &:hover {
+          background: #dc803d;
+          color: $white;
+        }
+      }
+  
+      ul {
+        display: flex;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+  
+        li {
+          padding-left: 20px;
+        }
+      }
+    }
+  
+    .progress-top {
+      display: inline-block;
+      width: 80%;
+      height: 15px;
+      border-radius: 20px;
+      background: #dc803d;
+      background: -moz-linear-gradient(-45deg, #dc803d 0%, #405199 100%);
+      background: -webkit-linear-gradient(-45deg, #dc803d 0%, #405199 100%);
+      background: linear-gradient(135deg, #dc803d 0%, #405199 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(
+          startColorstr="#dc803d",
+          endColorstr="#405199",
+          GradientType=1
+        );
+    }
+  
+    .progress-bottom {
+      display: block;
+      width: 100%;
+      height: 15px;
+      background: #dcdcdc;
+      border-radius: 20px;
+    }
+  
+    .number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: 0 auto;
+      position: absolute;
+      right: 0;
+      bottom: 30%;
+    }
+  
+    li {
+      position: relative;
+      margin-top: 45px;
+    }
+  
+    .designer {
+      position: relative;
+      background: url(../img/designer.jpg) no-repeat;
+      height: 727px;
+    }
+  }

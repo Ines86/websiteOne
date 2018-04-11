@@ -1,0 +1,54 @@
+/** Team Section **/
+#team {
+    text-align: center;
+    background-color: $white;
+    margin-bottom: 63px;
+  
+    h2 {
+      @include kaushanHeader(5rem, $grey);
+      margin: 100px 0 45px 0;
+    }
+  
+    p {
+      font-size: $m-size;
+      padding: 0 20px;
+    }
+  
+    img {
+      margin-top: 70px;
+      margin-bottom: 47px;
+      max-width: 218px;
+      border-radius: 20px;
+    }
+  
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+  
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 68px;
+      color: #b7b7b7;
+    }
+  
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .grey-box {
+      height: 315px;
+      width: 105%;
+      background-color: $light-grey;
+      margin-top: 185px;
+      margin-left: -30px;
+    }
+  
+    .staff {
+      z-index: 5;
+      margin-top: -480px;
+    }
+  }
+  
